@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    background-image: url('/imagenes/new_image.jpg');
+    background-size: cover;
+    font-size: 30px;
+    color: var(--text-color);
+    height: 100vh;
+    padding: 20px;
+}
+.sidebar.close ~ .home{
+    left: 78px;
+    height: 100vh;
+    width: calc(100% - 78px);
+}
+
+/*Estilos para el segundo bloque a la derecha del menu*/
+
+.tit_siira{
+    text-align: center;
+    color:#03071e;
+    text-shadow: 3px 0px 3px #370617;
+}
+.SIIRA_T{
+    margin-top: 70px;
+    margin-left: 50px;
+    font-size: 120px;
+    text-shadow: 3px 0px 3px #ffffff;
+    color: aliceblue;
+}

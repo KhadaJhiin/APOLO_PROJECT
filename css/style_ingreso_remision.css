@@ -1,0 +1,7 @@
+:root{
+    --coloryyy:red;
+}
+
+body{
+    background-color: var(--coloryyy);
+}

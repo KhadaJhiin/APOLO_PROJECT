@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clinica</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style_historial_clinico.css">
+</head>
+<body >
+  <header class="flex">
+    <h3> HISTORIA CLINICA</h3>
+    <p>SIIRA Nuevo Registro</p>
+    <img src="imagenes\logooo 2.jpg"  alt="">
+  </header> 
+<br>
+<br>
+  <div class="container px-4 "> 
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="" class="form-label">Id de Historia Clinica</label>
+          <input type="number" min="1" class="form-control" id="number">
+        </div>
+        <div class="col-md-4">
+          <label for="date" class="form-label">Fecha</label>
+          <input type="date" class="form-control" id="date">
+        </div>
+        <div class="col-md-4">
+          <label for="time" class="form-label">Hora</label>
+          <input type="time" class="form-control" id="time">
+        </div>
+        <br>
+        <section>
+          Datos del Propietario
+        </section>
+    <br>
+    <div class="col-md-4">
+      <label for="" class="form-label">Nombres</label>
+      <input type="tex"  class="form-control" id="Nombre">
+    </div>
+    <div class="col-md-4">
+      <label for="date" class="form-label">Apellidos</label>
+      <input type="text" class="form-control" id="Apellidos">
+    </div>
+    <div class="col-md-4">
+      <label for="" class="form-label">Tipo de Identificacion</label>
+      <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">CC</option>
+        <option value="2">TI</option>
+        <option value="3">RC</option>
+      </select>
+    
+    </div>
+      <div class="col-md-4">
+        <label for="" class="form-label">N° de Identificacion</label>
+        <input type="text"  class="form-control" id="N° de Identificacion">
+      </div>
+      <div class="col-md-4">
+        <label for="date" class="form-label">Direccion</label>
+        <input type="text" class="form-control" id="Direccion">
+      </div>
+      <div class="col-md-4">
+        <label for="" class="form-label">Correo Electronico</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="col-md-4">
+        <label for="" class="form-label">Telefono</label>
+        <input type="tel" class="form-control" id="Telefono">
+      </div>
+      <br>
+      <section>
+        Reseña del Paciente
+      </section>
+  <br>
+  <div class="col-md-4">
+    <label for="" class="form-label">Nombre del Animal</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="col-md-4">
+    <label for="" class="form-label">Edad</label>
+    <input type="number" min="1" class="form-control" id="Edad">
+  </div>
+  <div class="col-md-4">
+    <label for="date" class="form-label">Fecha de Nacimiento</label>
+    <input type="date" class="form-control" id="date">
+  </div>
+  <div class="col-md-4">
+  <label for="" class="form-label">Sexo</label>
+  <select class="form-select" aria-label="Default select example">
+    <option selected></option>
+    <option value="1">Macho</option>
+    <option value="2">Hembra</option>
+  </select>
+  </div>
+  <div class="col-md-4">
+    <label for="" class="form-label">Raza</label>
+    <input type="tetx" class="form-control" id="Raza">
+  </div>
+  <div class="col-md-2">
+    <label for="" class="form-label">Color</label>
+    <input type="text" class="form-control" id="color">
+  </div>
+  <div class="col-md-2">
+    <label for="" class="form-label">Peso en Kg</label>
+    <input type="number" class="form-control" id="Peso">
+  </div>
+  <br>
+  <section>
+    Anamnesis
+  </section>
+  <br>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2"></label>
+  </div>
+  <br>
+  <section>
+    Abordaje Diagnostico
+  </section>
+  <br>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2"></label>
+  </div>
+  <br>
+  <section>
+    Laboratorios Complementarios
+  </section>
+  <br>
+  <div class="col-md-4">
+    <label for="date" class="form-label">Fecha</label>
+    <input type="date" class="form-control" id="date">
+  </div>
+  <div class="col-md-4">
+    <label for="" class="form-label">Laboratorios</label>
+    <input type="text" class="form-control" id="Laboratorios">
+  </div>
+  <label for="" class="form-label">Resultados</label>
+  <div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2"></label>
+  </div>
+  <div class="col-md-4">
+    <label for="" class="form-label">Diagnostico Definitivo</label>
+    <input type="text" class="form-control" id="Diagnostico">
+  </div>
+  <section>Plan Terapeutico</section>
+  <div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2"></label>
+  </div>
+  <section>Evolución</section>
+  <div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2"></label>
+  </div>
+  <section>Observación</section>
+  <div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2"></label>
+  </div>
+  <br>
+  <div class="col-md-4">
+    <label for="" class="form-label">Id del Profesional</label>
+    <input type="text" class="form-control" id="Identificacion">
+  </div>
+  <div class="col-md-4">
+    <label for="" class="form-label">Nombre del Profecional</label>
+    <input type="text" class="form-control" id="NombreProfecional">
+  </div>
+  <div class="col-md-4">
+    <label for="firma" class="form-label">Firma del Profecional</label>
+    <input type="text" class="form-control" id="Firma">
+  </div>
+  <br>
+  <br>
+  <br>
+  <div >
+  <button class="btn btn-secondary" type="button">Guardar</button>
+  <input class="btn btn-secondary" type="reset" value="Cancelar">
+  <a href="javascript:genPDF()" class="btn btn-secondary" >PDF</a>
+  </div>
+
+        </form>
+        <br>
+        <br>
+      </div>
+      <br>
+      <br>
+    <script src="js\jspdf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>

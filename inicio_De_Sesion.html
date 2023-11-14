@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio_sesion</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style_inicio_sesion.css">
+</head>
+<body>
+    <div class="contendor">
+        <div class="contenedor_1">
+            <div class="img_siira">
+                <img src="/imagenes/incioses.jpg" alt="logo_siira">
+            </div>
+            <div class="imgapolo">
+                <img src="/imagenes/WhatsApp Image 2023-10-23 at 5.00.52 PM.jpeg" alt="">
+            </div>
+        </div>
+        <div class="formulario">
+            <h1> SIIRA</h1>
+            <p>Sistema de información e identificación y registro animal</p>
+            <i class='bx bxs-user'></i>
+            <form action="">
+                <div class="contendor_inputs">
+                    <input type="text" id="usuario" name="usuario" placeholder="Nombre usuario" required="true">
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required="true">
+                </div>
+                <div>
+                    <input type="checkbox" id="cbox1" name="cbox1" required="true" value="Recordarme">
+                    <label for="cbox1">Recordarme</label>
+                    <a href="#">Olvide mi contraseña</a>
+                </div>
+                <input type="submit" class="btn-submit" value="Iniciar sesion" onclick="location.href='menu_inicio.html'">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

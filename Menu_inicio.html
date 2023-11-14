@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu_inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style_Menu_Inicio.css">
+</head>
+<body>
+
+<!-- INICIO DEL MAIN-->
+    <nav class="sidebar close">
+        
+        <header>
+            <div class="text logo">
+                <i class='bx bxs-user'></i>
+                <span class="profe">Jose Ortega</span>
+            </div>
+            <i class="bx bx-menu toggle icon"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="/gestion_usuario.html" target="Iframe_menu">
+                            <i class='bx bx-user-plus icon'></i>
+                            <span class="text nav-text">Gestion usuarios</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="/triaje.html" target="Iframe_menu">
+                            <i class='bx bx-log-in-circle icon'></i>
+                            <span class="text nav-text">Ingreso o Remision</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="/historial clinico.html" target="Iframe_menu">
+                            <i class='bx bx-buildings icon'></i>
+                            <span class="text nav-text">Historial Clinico</span>
+                        </a>
+                    </li>
+                    <!--PARA PONER DESPUES
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-file icon'></i>
+                            <span class="text nav-text">Facturacion</span>
+                        </a>
+                    </li>
+                    -->
+                    <li class="nav-links">
+                        <a href="/formulario de adopcion.html" target="Iframe_menu">
+                            <i class='bx bxs-dog icon'></i>
+                            <span class="text nav-text">Adopcion</span>
+                        </a>
+                    </li>  
+                </ul>
+            </div>
+            
+            <div class="botton-content">
+                <li class="">
+                    <a href="#">
+                        <i class="bx bx-log-out icon" onclick="location.href='inicio_De_Sesion.html'"></i>
+                        <span class="text nav-text" onclick="location.href='inicio_De_Sesion.html'">Cerrar sesion</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <iframe src="Inicio_gestion.html" frameborder="0" class="marco" name="Iframe_menu" frameborder="0" marginwidth="0" marginheight="0" width="100%" height="100%" ></iframe>
+    </section>
+    <script src="/js/script_menu_inicio.js"></script>
+
+</body>
+</html>
