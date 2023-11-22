@@ -21,50 +21,44 @@
 
 body{
     min-height: 100vh;
+    background-color: var(--body-color);
     transition: var(--tra-05);
 }
+
 ::selection{
     background-color: var(--primary-color);
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
-header i{
-    font-size: 30px;
-    
-}
-
-.sidebar {
-    position: fixed;
+.sidebar{
+    /*position: fixed;*/  /*Nota: Lo dejamos comentado, por que este nos hace que se quede el menu estatico y como nuestro menu es mas grande que el 100vh entonces no nos sirve*/
     top: 0;
     left: 0;
-    height: 100%;
-    width: 250px;
-    padding: 10px 14px;
-    background: var(--sidebar-color);
-    transition: var(--tra-05);
+    min-height: 100vh; /*Con esto arreglamos el problema de que nos quedaba por la mitad el sidebar*/
+    width: 280px;
+    background-color: var(--sidebar-color);
     z-index: 100;
+    transition: var(--tra-05);
+    padding: 10px 14px;
 }
+
 
 .sidebar.close{
-    width: 88px;
+    width: 90px;
 }
-
 .sidebar li{
-    height: 50px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .sidebar header .image,
-.sidebar .icon{
+.sidebar i{
     min-width: 60px;
     border-radius: 6px;
 }
 
-.sidebar .icon{
-    min-width: 60px;
+
+.sidebar i{
+    min-width: 40px;
     border-radius: 6px;
     height: 100%;
     display: flex;
@@ -73,11 +67,21 @@ header i{
     font-size: 20px;
 }
 
+.sidebar .bx-chevron-right{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 20px;
+    
+}
+
+
 .sidebar .text,
-.sidebar .icon{
+.sidebar i{
     color: var(--text-color);
     transition: var(--tra-03);
 }
+
 .sidebar .text{
     font-size: 17px;
     font-weight: 500;
@@ -87,60 +91,66 @@ header i{
 .sidebar.close .text{
     opacity: 0;
 }
+
 .sidebar header{
     position: relative;
 }
-.sidebar header .logo{
+
+.sidebar header .header__logo{
     display: flex;
     flex-direction: column;
 }
-.name{
+
+.header__name{
     margin-top: 2px;
     font-size: 18px;
     font-weight: 600;
 }
-.profe{
-    font-size: 16px;
-    margin-top: -2px;
+
+.header__logo i{
+    font-size: 30px;
     display: block;
 }
-.sidebar header .image{
-    display: flex;
-    align-items: center;
-    justify-content:center;
+
+.header__profesion{
+    font-size: 16px;
+    margin-top: 2px;
+    display: block;
 }
-.sidebar header .image img{
-    width: 40px;
-    border-radius: 6px;
-}
+
+
 .sidebar header .toggle{
     position: absolute;
     top: 20%;
-    right: 0px;
+    right: 5px;
     height: 35px;
-    width: 30px;
+    width: 35px;
     background-color: var(--primary-color);
-    color:var(--sidebar-color);
+    color: var(--sidebar-color);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 35px;
     cursor: pointer;
-    transition:var(--tra-05);
+    transition: var(--tra-05);
 }
+
 .sidebar.close .toggle{
     width: 100%;
     top: 20%;
 }
+
 .sidebar .menu{
     margin-top: 40px;
 }
+
+
 .sidebar li a{
     list-style: none;
     height: 100%;
     background-color: transparent;
     display: flex;
-    align-items: center;
+    align-items: left;
     height: 100%;
     width: 100%;
     border-radius: 6px;
@@ -148,48 +158,59 @@ header i{
     transition: var(--tra-03);
 }
 
+
+
 .sidebar li a:hover{
     background-color: var(--primary-color);
 }
+
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text{
     color: var(--sidebar-color);
 }
+
+
 .sidebar .menu-bar{
-    height: calc(100% - 55px);
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: scroll;
 }
+
+
 .menu-bar::-webkit-scrollbar{
     display: none;
 }
-.sidebar .menu-bar .mode{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    position: relative;
-    transition: var(--tra-05);
+
+.menu__inferior{
+    list-style: none;
 }
+
+
 .home{
     position: absolute;
     top: 0;
-    left: 250px;
+    left: 280px;
     height: 100vh;
-    width: calc(100% - 250px);
+    width: calc(100% - 280px);
+    background-color: var(--body-color);
     transition: var(--tra-05);
 }
-/*
+
 .home .text{
-    background-image: url('/imagenes/new_image.jpg');
-    background-size: cover;
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
-    padding:14px 30px;
-    height: 100vh;
+    padding: 12px 60px;
 }
-*/
+
+.sidebar.close ~ .home {
+    left:90px;
+    height: 100vh;
+    width: calc(100% - 90px);
+}
+
 .marco{
     height: 100vh;
     width: 100%;
@@ -197,22 +218,84 @@ header i{
     padding: 0;
     border: 0;
 }
-.sidebar.close ~ .home{
-    left: 78px;
-    height: 100vh;
-    width: calc(100% - 78px);
-}
 
-.sidebar li a img{
-    flex-direction: column;
-    height: 100%;
+
+.sidebar__link{
     width: 100%;
+    color: var(--text-color);
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.sidebar__link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+.sidebar__link--inside:hover{
+    background:var(--primary-color-light);
+}
+
+/*
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+*/
+
+.links__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
 }
 
 
 
+/*
+.links__item a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+*/
 
+.links__item a:hover{
+    color: #FFFFFF;
 
+}
 
+.links__item--click{
+    cursor: pointer;
+}
 
+.links__button{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
 
+.arrow .link__arrow{
+    transform: rotate(90deg);
+}
+
+.link__arrow{
+    margin-left: auto;
+    transition: var(--tra-03);
+}
+
+.links__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid var(--text-color);
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}

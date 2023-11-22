@@ -10,69 +10,152 @@
 </head>
 <body>
 
-<!-- INICIO DEL MAIN-->
     <nav class="sidebar close">
-        
-        <header>
-            <div class="text logo">
+
+        <!--Header del sidebar-->
+
+        <header class="header">
+            <div class="header__logo text ">
                 <i class='bx bxs-user'></i>
-                <span class="profe">Jose Ortega</span>
+                <span class="header__name">Jose Ortega</span>
             </div>
-            <i class="bx bx-menu toggle icon"></i>
+            <i class="bx bx-menu toggle"></i>
         </header>
 
+        <!--Header del sidebar-->
+
         <div class="menu-bar">
+
             <div class="menu">
-                <ul class="menu-links">
-                    <li class="nav-links">
-                        <a href="/gestion_usuario.html" target="Iframe_menu">
-                            <i class='bx bx-user-plus icon'></i>
-                            <span class="text nav-text">Gestion usuarios</span>
-                        </a>
+
+                <ul class="links">
+
+                    <li class="links__item links__item--click">
+                        <div class="links__button links__button--click">
+                            <a href="#">
+                                <i class='bx bx-user-plus icon'></i>
+                                <span class="text sidebar__text">Gestion usuarios</span>
+                            </a>
+                            <i class='bx bx-chevron-right link__arrow'></i>
+                        </div>
+
+                        <ul class="links__show">                            
+                            <li class="links__inside">
+                                <a href="/gestion_usuario.html" target="Iframe_menu" class="sidebar__link sidebar__link--inside">Registro Usuario</a>
+                            </li>
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Buscar Usuario</a>
+                            </li>             
+                        </ul>
                     </li>
-                    <li class="nav-links">
-                        <a href="/triaje.html" target="Iframe_menu">
-                            <i class='bx bx-log-in-circle icon'></i>
-                            <span class="text nav-text">Ingreso o Remision</span>
-                        </a>
+
+
+                    <li class="links__item links__item--click">
+                        <div class="links__button links__button--click">
+                            <a href="#">
+                                <i class='bx bx-log-in-circle icon'></i>
+                                <span class="text sidebar__text">Ingreso o Remision</span>
+                            </a>
+                            <i class='bx bx-chevron-right link__arrow'></i>
+                        </div>      
+                        
+                        <ul class="links__show">                            
+                            <li class="links__inside">
+                                <a href="/triaje.html" target="Iframe_menu" class="sidebar__link sidebar__link--inside">Triaje</a>
+                            </li>
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Admision</a>
+                            </li>      
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Observacion</a>
+                            </li>  
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Hospitalizacion</a>
+                            </li>  
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Remision</a>
+                            </li>      
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Egreso</a>
+                            </li>         
+                        </ul>                    
                     </li>
-                    <li class="nav-links">
-                        <a href="/historial clinico.html" target="Iframe_menu">
-                            <i class='bx bx-buildings icon'></i>
-                            <span class="text nav-text">Historial Clinico</span>
-                        </a>
+
+
+                    <li class="links__item links__item--click">
+                        <div class="links__button links__button--click">
+                            <a href="#">
+                                <i class='bx bx-buildings icon'></i>
+                                <span class="text sidebar__text">Historial Clinico</span>
+                            </a>
+                            <i class='bx bx-chevron-right link__arrow'></i>
+                        </div>    
+                        
+                        <ul class="links__show">                            
+                            <li class="links__inside">
+                                <a href="/historial clinico.html" target="Iframe_menu" class="sidebar__link sidebar__link--inside">Nuevo Registro</a>
+                            </li>
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Buscar Registro</a>
+                            </li> 
+                        </ul> 
                     </li>
-                    <!--PARA PONER DESPUES
-                    <li class="nav-links">
-                        <a href="#">
-                            <i class='bx bx-file icon'></i>
-                            <span class="text nav-text">Facturacion</span>
-                        </a>
+
+                    <li class="links__item links__item--click">
+                        <div class="links__button links__button--click">
+                            <a href="#">
+                                <i class='bx bx-file icon'></i>
+                                <span class="text sidebar__text">Facturacion</span>
+                            </a>
+                            <i class='bx bx-chevron-right link__arrow'></i>
+                        </div>    
+                        
+                        <ul class="links__show">                            
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Nueva Factura</a>
+                            </li>
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Buscar Factura</a>
+                            </li> 
+                        </ul> 
                     </li>
-                    -->
-                    <li class="nav-links">
-                        <a href="/formulario de adopcion.html" target="Iframe_menu">
-                            <i class='bx bxs-dog icon'></i>
-                            <span class="text nav-text">Adopcion</span>
-                        </a>
-                    </li>  
+
+                    <li class="links__item links__item--click">
+                        <div class="links__button links__button--click">
+                            <a href="#">
+                                <i class='bx bxs-dog icon'></i>
+                                <span class="text sidebar__text">Adopcion</span>
+                            </a>
+                            <i class='bx bx-chevron-right link__arrow'></i>
+                        </div>    
+                        
+                        <ul class="links__show">                            
+                            <li class="links__inside">
+                                <a href="/formulario de adopcion.html" target="Iframe_menu" class="sidebar__link sidebar__link--inside">Formulario Adopcion</a>
+                            </li>
+                            <li class="links__inside">
+                                <a href="#" class="sidebar__link sidebar__link--inside">Contrato Adopcion</a>
+                            </li> 
+                        </ul> 
+                    </li>
                 </ul>
             </div>
-            
-            <div class="botton-content">
-                <li class="">
+
+            <div class="menu__inferior">
+                <li class=""> <!--Clse vacia para js-->
                     <a href="#">
                         <i class="bx bx-log-out icon" onclick="location.href='inicio_De_Sesion.html'"></i>
-                        <span class="text nav-text" onclick="location.href='inicio_De_Sesion.html'">Cerrar sesion</span>
+                        <span class="text sidebar__text" onclick="location.href='inicio_De_Sesion.html'">Cerrar sesion</span>
                     </a>
                 </li>
             </div>
         </div>
     </nav>
+
     <section class="home">
         <iframe src="Inicio_gestion.html" frameborder="0" class="marco" name="Iframe_menu" frameborder="0" marginwidth="0" marginheight="0" width="100%" height="100%" ></iframe>
     </section>
-    <script src="/js/script_menu_inicio.js"></script>
 
+    <script src="/js/script_menu_inicio.js"></script>
 </body>
 </html>
