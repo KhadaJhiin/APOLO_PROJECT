@@ -103,6 +103,124 @@ form a{
     color: white;
 }
 
+/*Estilos para el inicio de sesion popup*/
+
+.overlay{
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top:0 ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    z-index: 4;
+    visibility: hidden;
+ }
+ .overlay.active{
+    visibility: visible;
+ }
+ .popup{
+    z-index: 5;
+    background:#f8f8f8;
+    box-shadow:0px 0px 5px 8px rgba(245, 164, 241, 0.3) ;
+    border-radius: 3px;
+    font-family: montserrat, sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: 450px;
+    transition: .5s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+ }
+ 
+ .popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #bbbbbb;
+    transition: .3s ease all;
+ }
+ 
+ .popup .btn-cerrar-popup:hover{
+    color: #000;
+ }
+ 
+ .popup h3{
+    font-size: 30px;
+    font-weight: 6px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family:'Times New Roman', Times, serif;
+    opacity: 0;
+ }
+ 
+ .popup form .contenedor-imputs{
+    opacity: 0;
+ }
+ 
+ .popup form .contenedor-imputs input{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid#bbbbbb;
+ }
+ 
+ .popup form .btn-submit{
+    margin-top: 40px;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    color:#fff;
+    background:var(--primary-color);
+    border-radius: 3px;
+    font-family: 'Monserrat',sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+ }
+ 
+ .popup form .btn-submit:hover{
+    background: rgba(125, 13, 139, 0.3);
+ }
+ 
+ .popup.active{
+    opacity: 1;
+    transform: scale(1);
+ }
+ .popup.active h3{
+    animation: entradaTitulo 2s ease .5s forwards;
+ }
+ .popup.active .contenedor-imputs{
+    animation: entradainputs 1s ease 1s forwards;
+ }
+ 
+ @keyframes entradaTitulo{
+    from{
+       transform: translateY(-25px);
+       opacity: 0;
+    }
+    to{
+       transform: translateY(0);
+       opacity: 1;
+    }
+ }
+ @keyframes entradainputs {
+    from{
+       opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }
+    
+ }
 
 
 
