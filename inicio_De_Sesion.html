@@ -32,8 +32,33 @@
                     <a href="#">Olvide mi contraseña</a>
                 </div>
                 <input type="submit" class="btn-submit" value="Iniciar sesion" onclick="location.href='Menu_inicio.html'">
+                <input type="button" class="btn-submit" value="Registrarme" class="btn-abrir-popup" id="btn-abrir-popup">
+            </form>   
+        </div>
+    </div>
+
+    <!--Ventana emergente para registro de usuario-->
+
+    <div class="overlay" id="overlay"> 
+        <div class="popup" id="popup"> 
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>REGISTRO DE USUARIO</h3>
+            <form action="">
+                <div class="contenedor-imputs">
+                    <input type="text" id="nombre_cliente" name="nombre_cliente" placeholder="Nombre de usuario" required="true">
+                    <input type="text" id="documento" name="documento" placeholder="Documento de identidad" required="true">
+                    <input type="password" id="contraseña_cliente" name="contraseña_cliente" placeholder="Contraseña" required="true">
+                </div>
+                <div>
+                    <input type="checkbox" id="cbox1" name="cbox1" required="true" value="No soy un robot"/>
+                    <label for="cbox1">No soy un robot</label>
+                </div>
+                <input type="submit" class="btn-submit" value="Registrarse" onclick="location.href='inicio_De_Sesion.html'">
             </form>
         </div>
     </div>
+
+    <script src="/js/popup.js"></script>
+
 </body>
 </html>
