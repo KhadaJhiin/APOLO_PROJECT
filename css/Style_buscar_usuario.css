@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+:root{
+    --body-color:#9B27B00D;
+    --sidebar-color:#FFFFFF;
+    --primary-color:#9C27B0;
+    --primary-color-light:#9B27B00D;
+    --colo-nuevo:#370617;
+    --toggle-color:#DDDDDD;
+    --text-color:#707070;
+    --color_botones_guardar:#5ccb5f;
+    --color_boton_cancelar:#ef2947;
+    --color-background-titulos:#ccaee4;
+    --color-background-hoover-titulos:#e9ddf3;
+
+    --tra-03: all 0.2s ease;
+    --tra-04: all 0.3s ease;
+    --tra-05: all 0.4s ease;
+}
+body{
+	background-image: url(/imagenes/buscar.jpg);
+	background-size: cover;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.titulo{
+    margin-left:25%;
+    margin-top: 2%;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--colo-nuevo);
+}
+
+nav{
+	max-width: 335px;
+	margin-left: 25%;
+	background-color: #333;
+	font-size: 20px;
+	margin-top: 30px;
+    font-weight: bold;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color:#FFFFFF;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal > li > a:hover{
+	color: #FFFFFF;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 180px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+    font-size: 15px;
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+.ingrese_datos{
+	margin-left: 24%;
+	padding: 20px;
+	max-width: 400px;
+	background: white;
+}
+
+.ingrese_datos h2{
+    font-size: 20px;
+}
+
+.container{
+    margin-left: 25%;
+}
+
+.container input{
+    padding: 10px;
+    padding-right: 70px;
+    border-radius: 5px 0 0 5px;
+}
+
+.container button{
+    background-color: crimson;
+    padding: 10px 15px;
+    border-color: crimson;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.container button:hover{
+    background-color: darkred;
+    border-color: darkred;
+}
+.container button i{
+    font-size: 15px;
+}
