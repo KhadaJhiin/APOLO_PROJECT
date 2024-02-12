@@ -15,16 +15,16 @@
     --tra-05: all 0.4s ease;
 }
 body {
+    background-image: url(/imagenes/posible1.jpg);
+	background-size: cover;
     font-family: Arial, sans-serif;
-    /*background-color:#9B27B00D;*/
-    background-color:var(--body-color);
     margin: 0;
     padding: 0;
   }
 .titulo{
     margin: auto;
     width: 950px;
-    background-color: #ccaee4;
+    background-color:rgba(218, 196, 236, 0.5);
 }
 
 h3{

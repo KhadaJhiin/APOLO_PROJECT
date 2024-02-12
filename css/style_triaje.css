@@ -16,26 +16,26 @@
 }
 
 h3{
+  width: 950PX;
+  margin: auto;
   font-family: 'Poppins', sans-serif;
-  font-size: 30pt;         
+  font-size: 40px;         
   font-style: normal; 
   font-weight: bold; 
-  /*color:SlateBlue;*/
   color:var(--colo-nuevo);
   text-align: center; 
-  text-decoration: underline
+  background-color:rgba(218, 196, 236);
 }
 
 table{
+  margin-top: 30px;
   font-family: 'Poppins', sans-serif;
   color:var(--colo-nuevo);
   font-size: 15pt; 
   font-style: normal;
   font-weight: bold;
   /*background-color:#b41ce7ef; */
-  background-color: var(--body-color);
   border-collapse: collapse; 
-  border: 2px solid navy
 }
 
 table.inner{
@@ -43,9 +43,8 @@ table.inner{
 }
 
 body {
+    background-image: url(/imagenes/pruebatriaje.jpg);
     font-family: Arial, sans-serif;
-    /*background-color:#9B27B00D;*/
-    background-color: var(--body-color);
     margin: 0;
     padding: 0;
   }
