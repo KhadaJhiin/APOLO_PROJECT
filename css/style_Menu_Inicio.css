@@ -21,7 +21,7 @@
 
 body{
     min-height: 100vh;
-    background-color: var(--body-color);
+    /*background-color: var(--body-color);*/
     transition: var(--tra-05);
 }
 
@@ -194,7 +194,7 @@ body{
     left: 280px;
     height: 100vh;
     width: calc(100% - 280px);
-    background-color: var(--body-color);
+    /*background-color: var(--body-color);*/
     transition: var(--tra-05);
 }
 
