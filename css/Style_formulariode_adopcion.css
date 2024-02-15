@@ -15,6 +15,7 @@
 body{
     background-color: var(--body-color);
     font-family: 'Poppins', sans-serif;
+    background-image: url(/imagenes/remision.jpeg); 
 }
 
 .flex{

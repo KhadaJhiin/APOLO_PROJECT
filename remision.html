@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/remision.css">
+</head>
+<body>
+    <h3>Formulario de Remisión de Pacientes</h3>
+
+    <form action="procesar_formulario.php" method="post">
+        <table align="center" cellpadding="10">
+            <tr>
+                <td>Nombre del Propietario</td>
+                <td><input type="text" name="nombre_propietario" maxlength="60" /></td>
+            </tr>
+            <tr>
+                <td>Identificación</td>
+                <td>
+                    <input type="text" name="identificacion" maxlength="10" />
+                    (Máximo 10 dígitos)
+                </td>
+            </tr>
+            <tr>
+                <td>Nombre del Animal</td>
+                <td><input type="text" name="nombre_animal" maxlength="60" /></td>
+            </tr>
+            <tr>
+                <td>Tipo de Animal</td>
+                <td><input type="text" name="tipo_animal" maxlength="30" /></td>
+            </tr>
+            <tr>
+                <td>Nivel</td>
+                <td>
+                    <input type="radio" name="nivel" value="Emergencia" /> Emergencia
+                    <input type="radio" name="nivel" value="Resucitacion" /> Resucitación
+                    <input type="radio" name="nivel" value="Urgencia" /> Urgencia
+                    <input type="radio" name="nivel" value="Urgencia_Menor" /> Urgencia Menor
+                </td>
+            </tr>
+            <tr>
+                <td>Estado de Ingreso</td>
+                <td><textarea name="estado_ingreso" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td>Remitido a:</td>
+                <td><input type="text" name="remitido_a" maxlength="50" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Guardar">
+                    <input type="reset" value="Cancelar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

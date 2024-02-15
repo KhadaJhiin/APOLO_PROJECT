@@ -44,8 +44,8 @@ table.inner{
 
 body {
     font-family: Arial, sans-serif;
-    /*background-color:#9B27B00D;*/
-    background-color: var(--body-color);
+    background-image: url(/imagenes/admision\ prueba.jpg);
+    /*background-size: cover;*/
     margin: 0;
     padding: 0;
   }
